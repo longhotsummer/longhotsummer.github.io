@@ -3,11 +3,24 @@ layout: default
 title: Greg Kempe
 ---
 
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
+<section>
+  <h2>Blog Posts</h2>
+  <ul class="posts list-unstyled">
     {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+      <li><span class="date">{{ post.date | date_to_string }}</span> <a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>
-</div>
+</section>
+
+<section>
+  <h2>Projects</h2>
+
+  <p>
+  <a href="http://openbylaws.org.za">OpenByLaws.org.za</a> makes South Africa's by-laws freely available and easy to read and share. It transforms difficult to read, poorly scanned PDF files into webpages that are consistently and beautifully formatted, fully searchable and easy to link to. I was awarded a Code for South Africa Innovation Fellowship and a Shuttleworth Foundation Flash Grant for this project.
+  </p>
+
+  <p>
+  <a href="http://wazimap.co.za">Wazi</a> is a project to help journalists and others explore the demographics and political details of places around South Africa. The name comes from <i>ulwazi</i>, the Zulu word for <i>knowledge</i>, and the project is sponsored by <a href="http://www.mediamonitoringafrica.org/">Media Monitoring Africa</a>.
+  </p>
+
+</section>
