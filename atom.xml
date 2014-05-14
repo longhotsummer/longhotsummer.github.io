@@ -1,0 +1,28 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+  <title>Greg Kempe</title>
+  <link href="http://kempe.net/atom.xml" rel="self"/>
+  <link href="http://kempe.net/"/>
+  <updated>{{ site.time | date_to_xmlschema }}</updated>
+  <id>http://kempe.net/</id>
+  <author>
+    <name>Greg Kempe</name>
+  </author>
+
+  {% for post in site.posts %}
+    {% if post.unlisted != true %}
+      <entry>
+        <title>{{ post.title | xml_escape }}</title>
+        <link href="http://kempe.net{{ post.url }}"/>
+        <updated>{{ post.date | date_to_xmlschema }}</updated>
+        <id>http://kempe.net{{ post.id }}</id>
+        <content type="html">{{ post.content | xml_escape }}</content>
+      </entry>
+    {% endif %}
+  {% endfor %}
+
+</feed>
