@@ -2,7 +2,7 @@
 
 /* reset */
 body {
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.65em;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -42,7 +42,8 @@ p {
 }
 
 #infobar {
-  line-height: 1.4em;
+  line-height: 1.5em;
+  font-size: 14px;
   color: #555;
 }
 
