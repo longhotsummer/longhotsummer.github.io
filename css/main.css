@@ -1,8 +1,12 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic);
+
 /* reset */
 body {
   font-size: 14px;
   line-height: 1.65em;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
 
 h1, h2, h3, h4, h5 {
   margin-top: 0px;
@@ -22,6 +26,7 @@ header h1 {
 
 h1, h2, h3, h4, h5 {
   font-size: 18px;
+  font-weight: 700;
 }
 
 p {
