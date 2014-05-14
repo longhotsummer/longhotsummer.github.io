@@ -24,6 +24,14 @@ header h1 {
   font-size: 38px;
 }
 
+header h1 a {
+  color: #333;
+}
+
+header h1 a:hover {
+  text-decoration: none;
+}
+
 h1, h2, h3, h4, h5 {
   font-size: 18px;
   font-weight: 700;
@@ -67,8 +75,11 @@ footer {
 /*****************************************************************************/
 
 ul.posts li .date {
-  text-transform: uppercase;
   margin-right: 0.5em;
+}
+
+.date {
+  text-transform: uppercase;
 }
 
 /* standard */
