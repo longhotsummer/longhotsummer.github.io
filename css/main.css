@@ -18,6 +18,10 @@ h1, h2, h3, h4, h5 {
     margin-top: 3em;
     margin-bottom: 3em;
   }
+
+  #infobar {
+    margin-top: 3em;
+  }
 }
 
 header h1 {
@@ -53,6 +57,20 @@ p {
 
 #infobar .fa-ul {
   margin-left: 1.65em;
+}
+
+#infobar .fa-li {
+  top: 0.36em;
+}
+
+#infobar .photo {
+  width: 150px;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-bottom: 20px;
+
 }
 
 footer {
