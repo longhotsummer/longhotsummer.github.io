@@ -129,6 +129,11 @@ ul.posts li .date {
   background-color: #333;
 }
 
+.gist {
+  line-height: 1.42857143;
+  font-size: .9em;
+}
+
 /* responsive */
 
 @media (min-width: 992px) {

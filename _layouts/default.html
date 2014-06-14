@@ -16,6 +16,10 @@
 
     <link rel="stylesheet" href="/css/syntax.css">
     <link rel="stylesheet" href="/css/main.css">
+
+    {% for css in page.css %}
+      <link rel="stylesheet" href="{{ css }}"></script>
+    {% endfor %}
   </head>
   <body>
     <div id="wrapper" class="container">
@@ -55,4 +59,8 @@
       ga('send', 'pageview');
     </script>
   </body>
+
+  {% for js in page.js %}
+    <script src="{{ js }}"></script>
+  {% endfor %}
 </html>
