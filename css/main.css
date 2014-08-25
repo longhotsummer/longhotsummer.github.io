@@ -70,7 +70,6 @@ p {
   margin-right: auto;
   display: block;
   margin-bottom: 20px;
-
 }
 
 footer {
@@ -118,6 +117,12 @@ ul.posts li .date {
   border: none;
 }
 
+article aside {
+  line-height: 125%;
+  font-size: small;
+  font-style: italic;
+}
+
 /* terminal */
 .post pre.terminal {
   border: 1px solid #000;
@@ -139,6 +144,22 @@ ul.posts li .date {
 @media (min-width: 992px) {
   .container {
     max-width: 940px;
+  }
+}
+
+@media (min-width: 1200px) {
+  article aside {
+    position: absolute;
+    left: -19%;
+    width: 17%;
+    top: 5px;
+  }
+
+  article .with-aside {
+    position: relative;
+  }
+
+  article .with-aside aside {
   }
 }
 
