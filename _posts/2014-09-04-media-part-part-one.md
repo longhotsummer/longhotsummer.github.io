@@ -6,7 +6,7 @@ date: 2014-09-04
 
 ***(This is the first in a two-post series.)***
 
-In August I spent three intense days at [Media Party 2014](http://mediaparty.info/2014/) in Buenos Aires, Argentina. It’s a [Hacks/Hackers](http://hackshackers.com/) event at the intersection of journalism and technology, with over 1200 people — the biggest digital media gathering in Latin America. We explored tools, technology and approaches to bringing tech to the newsroom. My trip was very kindly sponsored by the International Center for Journalism and (ICFJ) and African Media Initiative (AMI).
+In August I spent three intense days at [Media Party 2014](http://mediaparty.info/2014/) in Buenos Aires, Argentina. It’s a [Hacks/Hackers](http://hackshackers.com/) event at the intersection of journalism and technology, with over 1200 people — the biggest digital media gathering in Latin America. We explored tools, technology and approaches to bringing tech to the newsroom. My trip was very kindly sponsored by Code for Africa.
 
 <img src="/images/konex-top.png" style="width: 100%">
 [Konex by nefiger](http://instagram.com/p/sSLQN1zMPd/)
