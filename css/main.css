@@ -93,6 +93,9 @@ footer {
 /*****************************************************************************/
 
 ul.posts li .date {
+  display: inline-block;
+  width: 6.3em;
+  text-align: right;
   margin-right: 0.5em;
 }
 
