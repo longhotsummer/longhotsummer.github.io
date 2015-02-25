@@ -39,20 +39,14 @@ Here's the query, then I'll dig into how it works:
           "query": "THE QUERY TEXT",
           "type": "best_fields",
           "cutoff_frequency": 0.001,
-          "fields": [
-            "title",
-            "body"
-          ]
+          "fields": ["title", "body"]
         }
       },
       "should": {
         "multi_match": {
           "query": "THE QUERY TEXT",
           "type": "phrase",
-          "fields": [
-            "title",
-            "body"
-          ]
+          "fields": ["title", "body"]
         }
       }
     }
@@ -91,10 +85,7 @@ The first part is the actual query.  Here we have two queries joined using the
           "query": "THE QUERY TEXT",
           "type": "best_fields",
           "cutoff_frequency": 0.001,
-          "fields": [
-            "title",
-            "body"
-          ]
+          "fields": ["title", "body"]
         }
       },
 {% endhighlight %}
@@ -122,10 +113,7 @@ Phrase Query
         "multi_match": {
           "query": "THE QUERY TEXT",
           "type": "phrase",
-          "fields": [
-            "title",
-            "body"
-          ]
+          "fields": ["title", "body"]
         }
       }
 {% endhighlight %}
