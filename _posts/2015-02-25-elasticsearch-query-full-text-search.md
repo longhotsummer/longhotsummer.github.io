@@ -78,16 +78,16 @@ The first part is the actual query.  Here we have two queries joined using the
 ``bool`` operator, let's dig into the first one:
 
 {% highlight json %}
-  "query": {
-    "bool": {
-      "must": {
-        "multi_match": {
-          "query": "THE QUERY TEXT",
-          "type": "best_fields",
-          "cutoff_frequency": 0.001,
-          "fields": ["title", "body"]
-        }
-      },
+"query": {
+  "bool": {
+    "must": {
+      "multi_match": {
+        "query": "THE QUERY TEXT",
+        "type": "best_fields",
+        "cutoff_frequency": 0.001,
+        "fields": ["title", "body"]
+      }
+    },
 {% endhighlight %}
 
 This is a basic term query across both the ``title`` and ``body`` fields
@@ -109,13 +109,13 @@ Phrase Query
 ============
 
 {% highlight json %}
-      "should": {
-        "multi_match": {
-          "query": "THE QUERY TEXT",
-          "type": "phrase",
-          "fields": ["title", "body"]
-        }
-      }
+"should": {
+  "multi_match": {
+    "query": "THE QUERY TEXT",
+    "type": "phrase",
+    "fields": ["title", "body"]
+  }
+}
 {% endhighlight %}
 
 The second query is also a ``multi_match`` query across both fields,
@@ -132,16 +132,16 @@ Highlights
 ==========
 
 {% highlight json %}
-  "highlight": {
-    "pre_tags": ["<mark>"],
-    "post_tags": ["</mark>"],
-    "fragment_size": 80,
-    "no_match_size": 0,
-    "fields": {
-      "title": {"number_of_fragments": 0},
-      "body": {"number_of_fragments": 1}
-    }
-  },
+"highlight": {
+  "pre_tags": ["<mark>"],
+  "post_tags": ["</mark>"],
+  "fragment_size": 80,
+  "no_match_size": 0,
+  "fields": {
+    "title": {"number_of_fragments": 0},
+    "body": {"number_of_fragments": 1}
+  }
+},
 {% endhighlight %}
 
 This portion hightlights the matches that are found in each field. If a field
@@ -155,11 +155,11 @@ Sorting and other stuff
 =======================
 
 {% highlight json %}
-  "_source": {"exclude": ["body"]},
-  "size": 20,
-  "sort": {
-    "_score": {"order": "desc"}
-  }
+"_source": {"exclude": ["body"]},
+"size": 20,
+"sort": {
+  "_score": {"order": "desc"}
+}
 {% endhighlight %}
 
 Here we tell ElasticSearch not to send back the full body of all our documents. That's
