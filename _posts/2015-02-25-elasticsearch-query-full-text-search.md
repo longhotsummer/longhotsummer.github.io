@@ -10,6 +10,8 @@ website and I'm surprised at how few examples there are of search queries for fu
 a collection of documents. So here's a breakdown of what I believe to be a reasonable default full-text
 search query for ElasticSearch.
 
+*(Update 2015-03-12: add ``operator``, set ``cutoff_frequency`` in ``multi_match`` query; increase body fragments to 2)*
+
 My goal is to provide a **reasonable default** which others can build upon. If you know how to improve this for the general case, please let me know.
 
 Caveats
@@ -38,7 +40,8 @@ Here's the query, then I'll dig into how it works:
         "multi_match": {
           "query": "THE QUERY TEXT",
           "type": "best_fields",
-          "cutoff_frequency": 0.001,
+          "cutoff_frequency": 0.0007,
+          "operator": "and",
           "fields": ["title", "body"]
         }
       },
@@ -58,7 +61,7 @@ Here's the query, then I'll dig into how it works:
     "no_match_size": 0,
     "fields": {
       "title": {"number_of_fragments": 0},
-      "body": {"number_of_fragments": 1}
+      "body": {"number_of_fragments": 2}
     }
   },
   "_source": {"exclude": ["body"]},
@@ -84,7 +87,8 @@ The first part is the actual query.  Here we have two queries joined using the
       "multi_match": {
         "query": "THE QUERY TEXT",
         "type": "best_fields",
-        "cutoff_frequency": 0.001,
+        "cutoff_frequency": 0.0007,
+        "operator": "and",
         "fields": ["title", "body"]
       }
     },
