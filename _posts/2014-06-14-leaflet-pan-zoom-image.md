@@ -52,7 +52,7 @@ That means zoom level 4 will be twice as big, zoom level 2 will half as big,
 and zoom level 1 a quarter of the original size. We start by focusing on the center of the image, at zoom level 1.
 
 {% highlight javascript %}
-  crs: L.CRS.Simple,
+  crs: L.CRS.Simple
 {% endhighlight %}
 
 This tells Leaflet to use a simple 1-1 mapping between screen pixels and its internal latitude-longitude coordinate system.
