@@ -26,6 +26,8 @@ able to read the article text. By using Leaflet I can **zoom out** to get an
 overview of the layout, and **zoom in** and **pan** to read the text. Leaflet
 takes care of all the user interaction details for me.
 
+**Update 2016-04-05:** [See this gist](https://gist.github.com/longhotsummer/ba9c96bb2abb304e4095ce00df17ae2f) for a full working example HTML file.
+
 ## The result
 
 Here's the end product.
