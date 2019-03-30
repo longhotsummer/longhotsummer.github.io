@@ -36,7 +36,7 @@ Our parser produces XML output which we can then unescape to restore the UTF-8 e
 URI.unescape(xml)
 {% endhighlight %}
 
-You can see the details of how we do it in Slaw [in this commit)[https://github.com/longhotsummer/slaw/commit/8386b8416accb2f71416760c3c25d995c4565dd7].
+You can see the details of how we do it in Slaw [in this commit](https://github.com/longhotsummer/slaw/commit/8386b8416accb2f71416760c3c25d995c4565dd7).
 
 ### How much faster, exactly?
 
