@@ -10,7 +10,7 @@ var map = L.map('image-map', {
 // dimensions of the image
 var w = 2000,
     h = 1500,
-    url = 'http://kempe.net/images/newspaper-big.jpg';
+    url = 'https://kempe.net/images/newspaper-big.jpg';
 
 // calculate the edges of the image, in coordinate space
 var southWest = map.unproject([0, h], map.getMaxZoom()-1);
