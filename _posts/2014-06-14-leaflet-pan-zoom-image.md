@@ -3,10 +3,10 @@ layout: post
 title: Using leaflet.js to pan and zoom a big image
 date: 2014-06-14 13:49
 js: 
-  - http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js
+  - https://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js
   - /js/2014-06-14-image-map.js
 css:
-  - http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css
+  - https://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css
 ---
 
 <style>
@@ -18,7 +18,7 @@ css:
 }
 </style>
 
-I recently used [leaflet.js](http://leafletjs.com/) to embed a large image in a webpage and allow users pan over it and zoom into it. There's a [Stack Overflow](http://stackoverflow.com/questions/13110763/is-leaflet-a-good-tool-for-non-map-images) post about how to do this for a single image, but the anwsers don't have enough detail to make it easy to understand and do.
+I recently used [leaflet.js](https://leafletjs.com/) to embed a large image in a webpage and allow users pan over it and zoom into it. There's a [Stack Overflow](https://stackoverflow.com/questions/13110763/is-leaflet-a-good-tool-for-non-map-images) post about how to do this for a single image, but the anwsers don't have enough detail to make it easy to understand and do.
 
 The image I used was of a newspaper article. It's not big enough to need
 segmentation, but it's too big to show on a page at full scale. I need to be
