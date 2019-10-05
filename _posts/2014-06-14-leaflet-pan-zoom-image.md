@@ -3,10 +3,10 @@ layout: post
 title: Using leaflet.js to pan and zoom a big image
 date: 2014-06-14 13:49
 js: 
-  - https://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js
+  - https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.js
   - /js/2014-06-14-image-map.js
 css:
-  - https://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css
+  - https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.css
 ---
 
 <style>
